@@ -11,12 +11,10 @@ export function start() {
 }
 
 function season(mm) {
-  switch (mm) {
-    case 01:
-      s1();
-      break;
-    default:
-      console.log("ᓚᘏᗢ");
+  if (mm == 1) {
+    s1();
+  } else {
+    console.log("ᓚᘏᗢ");
   }
 }
 
