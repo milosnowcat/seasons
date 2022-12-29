@@ -6,22 +6,14 @@ export function start() {
 
   today = mm + "/" + dd + "/" + yyyy;
   console.log(today);
-
-  var sIcon = season(mm);
-
-  return sIcon;
 }
 
 function season(mm) {
-  var sIcon;
-
   if (mm == 1) {
-    sIcon = s1();
+    s1();
   } else {
-    sIcon = s1();
+    s1();
   }
-
-  return sIcon;
 }
 
 function s1() {
@@ -56,9 +48,6 @@ function s1() {
       "</div>" +
       '<div class="seasons s1_text">Happy 2023!</div>' +
       "</div>" +
-      "</div>",
-    sIcon = "🕛";
+      "</div>";
   body.insertAdjacentHTML("beforebegin", season);
-
-  return sIcon;
 }
