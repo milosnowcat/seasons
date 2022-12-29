@@ -12,7 +12,7 @@ export function start() {
 
 function season(mm) {
   switch (mm) {
-    case 1:
+    case 01:
       s1();
       break;
     default:
