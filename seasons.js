@@ -6,8 +6,6 @@ export function start() {
 
   today = mm + "/" + dd + "/" + yyyy;
   console.log(today);
-
-  season(mm);
   
   return(season(mm));
 }
