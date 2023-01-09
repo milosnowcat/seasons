@@ -13,6 +13,8 @@ export function start() {
 function season(mm) {
   if (mm == 1) {
     s1();
+  } else if (mm == 2) {
+    s2();
   } else {
     console.log("ᓚᘏᗢ");
   }
@@ -52,4 +54,32 @@ function s1() {
       "</div>" +
       "</div>";
   body.insertAdjacentHTML("beforebegin", season);
+}
+
+function s2() {
+  var body = document.getElementById("rahcode_yt"),
+    season =
+      '<div class="project__data">' +
+      '<h2 class="project__title">Youtube</h2>' +
+      '<p class="project__description">Video</p>' +
+      '<a rel="sponsored" href="https://www.youtube.com/@rah_code" class="button button--flex button--white">Go<i class="uil uil-arrow-right project__icon button__icon"></i></a>' +
+      "</div>" +
+      '<iframe src="https://www.youtube.com/embed/bmCj0UNiflg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="project__img"></iframe>' +
+      "<br />";
+  body.innerHTML = season;
+
+  body = document.getElementById("rahcode_s");
+  season =
+    '<div class="project__data">' +
+    '<h2 class="project__title">Instagram</h2>' +
+    '<p class="project__description">:3</p>' +
+    '<a rel="sponsored" href="https://www.instagram.com/milosnowcat" class="button button--flex button--white">Go<i class="uil uil-arrow-right project__icon button__icon"></i></a>' +
+    "</div>" +
+    '<img src="https://seasons.rahcode.com/files/2/ad.jpg" alt="ᓚᘏᗢ" class="project__img" style="border-radius: 50%;" />' +
+    "<br />";
+  body.innerHTML = season;
+
+  body = document.head;
+  season = "<style>:root{--hue-color:340;}</style>";
+  body.innerHTML += season;
 }
