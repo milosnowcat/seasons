@@ -15,6 +15,8 @@ function season(mm) {
     s1();
   } else if (mm == 2) {
     s2();
+  } else if (mm == 3) {
+    s3();
   } else {
     console.log("ᓚᘏᗢ");
   }
@@ -66,7 +68,9 @@ function s2() {
       "</div>" +
       '<iframe src="https://www.youtube.com/embed/bmCj0UNiflg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="project__img"></iframe>' +
       "<br />";
-  body.innerHTML = season;
+  if (location.href.includes("www.rahcode.com")) {
+    body.innerHTML = season;
+  }
 
   body = document.getElementById("rahcode_s");
   season =
@@ -75,11 +79,19 @@ function s2() {
     '<p class="project__description">:3</p>' +
     '<a rel="sponsored" href="https://www.instagram.com/milosnowcat" class="button button--flex button--white">Go<i class="uil uil-arrow-right project__icon button__icon"></i></a>' +
     "</div>" +
-    '<img src="https://seasons.rahcode.com/files/2/ad.jpg" alt="ᓚᘏᗢ" class="project__img" style="border-radius: 50%;" />' +
+    '<img src="https://seasons.rahcode.com/files/2_ad.jpg" alt="ᓚᘏᗢ" class="project__img" style="border-radius: 50%;" />' +
     "<br />";
-  body.innerHTML = season;
+  if (location.href.includes("www.rahcode.com")) {
+    body.innerHTML = season;
+  }
 
   body = document.head;
   season = "<style>:root{--hue-color:340;}</style>";
+  body.innerHTML += season;
+}
+
+function s3() {
+  var body = document.head,
+    season = "<style>:root {--hue-color: 142;}</style>";
   body.innerHTML += season;
 }
