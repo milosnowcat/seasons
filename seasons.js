@@ -66,7 +66,7 @@ function s2() {
       '<p class="project__description">Music</p>' +
       '<a rel="sponsored" href="https://blog.rahcode.com/search/label/music" class="button button--flex button--white">Go<i class="uil uil-arrow-right project__icon button__icon"></i></a>' +
       "</div>" +
-      '<iframe style="border-radius: 12px" src="https://open.spotify.com/embed/track/17zZv23hvr7lZiu1aYFewU?utm_source=generator" width="100%" height="352" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" class="project__img"></iframe>' +
+      '<iframe style="border-radius: 12px" src="https://open.spotify.com/embed/track/17zZv23hvr7lZiu1aYFewU?utm_source=generator" width="100%" height="352" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>' +
       "<br />";
   if (location.href.includes("www.rahcode.com")) {
     body.innerHTML = season;
